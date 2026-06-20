@@ -3,61 +3,36 @@ import Image from "next/image";
 interface LogoProps {
   variant?: "light" | "dark";
   size?: "sm" | "md" | "lg";
-  showText?: boolean;
 }
 
-export function Logo({ variant = "light", size = "md", showText = true }: LogoProps) {
+export function Logo({ variant = "light", size = "md" }: LogoProps) {
   const isDark = variant === "dark";
 
   const dimensions = {
-    sm: { width: 28, height: 28 },
-    md: { width: 36, height: 36 },
-    lg: { width: 48, height: 48 },
-  };
-
-  const fontSize = {
-    sm: "text-lg",
-    md: "text-xl",
-    lg: "text-2xl",
+    sm: { width: 140, height: 40 },
+    md: { width: 180, height: 50 },
+    lg: { width: 220, height: 60 },
   };
 
   const { width, height } = dimensions[size];
 
   return (
-    <div className="flex items-center gap-2.5">
-      {/* SX Monogram */}
-      <SXMonogram
-        width={width}
-        height={height}
-        variant={variant}
-      />
-
-      {showText && (
-        <span
-          className={`font-heading font-extrabold ${fontSize[size]} tracking-[0.05em] ${
-            isDark ? "text-[#F3ECE0]" : "text-text-primary"
-          }`}
-        >
-          SEGNOX
-          <span
-            className={`font-semibold ${isDark ? "text-gold-lighter" : "text-gold"}`}
-          >
-            {" "}
-            STUDIO
-          </span>
-        </span>
-      )}
-    </div>
+    <Image
+      src="/logov2.png"
+      alt="SEGNOX Studio"
+      width={width}
+      height={height}
+      className={isDark ? "brightness-0 invert" : ""}
+      priority
+    />
   );
 }
 
-function SXMonogram({
-  width,
-  height,
+export function LogoIcon({
+  size = 32,
   variant = "light"
 }: {
-  width: number;
-  height: number;
+  size?: number;
   variant?: "light" | "dark";
 }) {
   const isDark = variant === "dark";
@@ -66,8 +41,8 @@ function SXMonogram({
 
   return (
     <svg
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -110,14 +85,4 @@ function SXMonogram({
       />
     </svg>
   );
-}
-
-export function LogoIcon({
-  size = 32,
-  variant = "light"
-}: {
-  size?: number;
-  variant?: "light" | "dark";
-}) {
-  return <SXMonogram width={size} height={size} variant={variant} />;
 }
