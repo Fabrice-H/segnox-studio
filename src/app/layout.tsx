@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { defaultMetadata } from "@/lib/seo";
-import { Analytics } from "@/components/analytics/google-analytics";
+import { Analytics as GoogleAnalytics } from "@/components/analytics/google-analytics";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { JsonLd } from "@/components/seo/json-ld";
 
 const montserrat = Montserrat({
@@ -35,7 +36,8 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body className="min-h-screen overflow-x-hidden">
-        <Analytics />
+        <GoogleAnalytics />
+        <VercelAnalytics />
         {children}
       </body>
     </html>
