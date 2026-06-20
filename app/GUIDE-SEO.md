@@ -125,7 +125,7 @@ NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=ton_code
 #### 3.1 Obtenir des avis Google (CRITIQUE)
 
 - Demande à tes 4 clients actuels de laisser un avis 5 étoiles
-- Envoie-leur ce lien : `https://g.page/r/[TON_ID]/review`
+- Envoie-leur ce lien : `https://g.page/r/CeqPPydYugf8EAE/review`
 - **Objectif : 5 avis minimum**
 
 #### 3.2 Créer des pages locales

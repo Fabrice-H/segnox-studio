@@ -92,7 +92,7 @@
 
 Nous ne sommes **pas une agence**. SEGNOX, c'est **un développeur qui fait le travail bien** — le client parle directement à la personne qui conçoit son système, pas à un commercial. Ce positionnement "solo qui aide" est une **force** : proximité, honnêteté, rapidité, prix justes.
 
-**Contact :** WhatsApp +225 07 78 67 17 17 · Paiement Mobile Money (Wave, Orange Money, CinetPay), possible en plusieurs fois.
+**Contact :** WhatsApp +225 07 69 38 92 79 · Paiement Mobile Money (Wave, Orange Money, CinetPay), possible en plusieurs fois.
 
 ---
 

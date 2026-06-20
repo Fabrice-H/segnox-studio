@@ -1,4 +1,6 @@
-export const WHATSAPP_NUMBER = "2250778671717";
+export const WHATSAPP_NUMBER = "2250769389279";
+
+export const GOOGLE_REVIEW_LINK = "https://g.page/r/CeqPPydYugf8EAE/review";
 
 export const WHATSAPP_LINKS = {
   default: `https://wa.me/${WHATSAPP_NUMBER}`,
