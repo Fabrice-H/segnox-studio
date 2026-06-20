@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+:root {
+  /* SEGNOX Design System Colors */
+  --cream: #FAF8F2;
+  --cream-dark: #EFE7D6;
+  --dark: #17140E;
+  --dark-footer: #110F0A;
+  --dark-card: #211C14;
+
+  /* Gold accent shades */
+  --gold: #B58A2B;
+  --gold-light: #C99A3B;
+  --gold-lighter: #DEBE72;
+  --gold-dark: #9C761F;
+
+  /* Text colors */
+  --text-primary: #1B1813;
+  --text-secondary: #57514A;
+  --text-muted: #8C8478;
+  --text-light: #A89C86;
+
+  /* Border colors */
+  --border: #ECE5D7;
+  --border-amber: #EFE0C6;
+
+  /* Functional colors */
+  --whatsapp: #25D366;
+  --whatsapp-dark: #06351c;
+  --danger: #C24A33;
+  --amber-bg: #FBF1E2;
+  --danger-accent: #B86A2B;
+
+  /* Light theme foreground */
+  --foreground-light: rgba(243, 236, 224, 0.66);
+  --foreground-lighter: rgba(243, 236, 224, 0.55);
+  --foreground-lightest: rgba(243, 236, 224, 0.45);
+}
+
+@theme inline {
+  /* Colors */
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-dark: var(--dark);
+  --color-dark-footer: var(--dark-footer);
+  --color-dark-card: var(--dark-card);
+
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-lighter: var(--gold-lighter);
+  --color-gold-dark: var(--gold-dark);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-light: var(--text-light);
+
+  --color-border: var(--border);
+  --color-border-amber: var(--border-amber);
+
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-dark: var(--whatsapp-dark);
+  --color-danger: var(--danger);
+  --color-amber-bg: var(--amber-bg);
+  --color-danger-accent: var(--danger-accent);
+
+  /* Fonts */
+  --font-heading: var(--font-montserrat);
+  --font-body: var(--font-open-sans);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text-secondary);
+  font-family: var(--font-body), 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes segGlow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes segScan {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(220%);
+  }
+}
+
+@keyframes segPipeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-glow {
+  animation: segGlow 7s ease-in-out infinite;
+}
+
+.animate-scan {
+  animation: segScan 2.6s linear infinite;
+}
+
+.animate-pipe-in {
+  animation: segPipeIn 0.55s ease-out forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-glow,
+  .animate-scan,
+  .animate-pipe-in {
+    animation: none !important;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--cream-dark);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--gold);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--gold);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Text wrap utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
