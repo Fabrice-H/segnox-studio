@@ -38,37 +38,66 @@ export const siteConfig = {
 
 // Mots-clés SEO optimisés pour Abidjan et Côte d'Ivoire
 const primaryKeywords = [
-  // Mots-clés principaux (haute priorité)
+  // 10 mots-clés prioritaires
   'création site web Abidjan',
   'développeur web Abidjan',
-  "développeur web Côte d'Ivoire",
-  'agence web Abidjan',
-  'créer site internet Abidjan',
-
-  // Mots-clés secondaires
-  'site internet Abidjan',
-  'création site professionnel Abidjan',
-  'développeur freelance Abidjan',
+  "site internet Côte d'Ivoire",
+  'site web professionnel Abidjan',
+  'site internet pour PME',
+  'site internet pour commerçant',
+  'être visible sur Google',
+  'présence professionnelle sur internet',
   'site vitrine Abidjan',
-  'site e-commerce Abidjan',
-  'site web PME Abidjan',
+  "développeur freelance Côte d'Ivoire",
+
+  // Mots-clés création de site
+  "création site internet Côte d'Ivoire",
+  'création site vitrine Abidjan',
+  'création site pour entreprise',
+
+  // Mots-clés présence professionnelle
+  'présence sur Google',
+  'image professionnelle entreprise',
+
+  // Secteurs - Immobilier
+  'site web agence immobilière Abidjan',
+  "site immobilier Côte d'Ivoire",
+
+  // Secteurs - Automobile
+  'site web vente voiture',
+  'site garage automobile Abidjan',
+
+  // Secteurs - Mode
+  'site web boutique vêtements',
+  'site web friperie',
+  'site web prêt-à-porter',
+
+  // Secteurs - Décoration
+  'site décorateur intérieur',
+  'site web décoration Abidjan',
+
+  // Secteurs - Construction
+  'site entreprise BTP',
+  'site société de construction',
+
+  // Secteurs - Restaurant
+  'site restaurant Abidjan',
+
+  // Mots-clés orientés problème
+  'remplacer une page Facebook par un site web',
+  'comment être visible sur Google',
+  'comment avoir plus de clients sur internet',
+  'comment donner une image professionnelle à son entreprise',
+  'site web pour PME Afrique',
+  'site internet pour commerçant Afrique',
+  'comment recevoir plus de demandes WhatsApp',
+  'comment présenter ses produits sur internet',
+  "comment vendre sur internet en Côte d'Ivoire",
 
   // Mots-clés de marque
   'SEGNOX Studio',
   'SEGNOX',
   'Fabrice Segnon développeur',
-
-  // Mots-clés longue traîne
-  'créer site web pour boutique Abidjan',
-  'site internet pour restaurant Abidjan',
-  'développeur web freelance Cocody',
-  'création site web pas cher Abidjan',
-  'site web avec WhatsApp Abidjan',
-  'site web paiement Mobile Money',
-  'site web paiement Wave Orange Money',
-  "présence en ligne PME Côte d'Ivoire",
-  'site web pour artisan Abidjan',
-  'site web pour salon de coiffure Abidjan',
 ];
 
 export const defaultMetadata: Metadata = {
