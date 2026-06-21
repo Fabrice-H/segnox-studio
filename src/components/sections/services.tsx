@@ -54,19 +54,15 @@ export function ServicesSection() {
       id="solutions"
       className="bg-white border-t border-b border-border"
     >
-      <div className="max-w-[1120px] mx-auto px-6 py-[88px]">
+      <div className="max-w-[1120px] mx-auto px-6 py-[72px]">
         {/* Header */}
-        <RevealOnScroll className="max-w-[680px] mb-11">
-          <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-gold mb-4">
-            Ce que j&apos;installe
-          </div>
-          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3.5 text-balance">
-            Je ne fais pas juste un site.
+        <RevealOnScroll className="max-w-[680px] mb-10">
+          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3 text-balance">
+            Ce que ça change pour vous.
           </h2>
           <p className="text-[17px] leading-[1.6] text-text-muted max-w-[540px] text-pretty">
-            Un joli site qui ne fait rien, ça ne sert à rien. Voici ce que je
-            mets en place pour que votre présence en ligne travaille vraiment
-            pour vous.
+            Pas juste un site. Un système qui travaille pendant que vous faites
+            votre métier.
           </p>
         </RevealOnScroll>
 

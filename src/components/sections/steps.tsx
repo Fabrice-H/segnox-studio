@@ -22,14 +22,11 @@ function StepLine() {
 
 export function StepsSection() {
   return (
-    <section className="max-w-[1120px] mx-auto px-6 py-[88px]">
+    <section className="max-w-[1120px] mx-auto px-6 py-[72px]">
       {/* Header */}
-      <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-14">
-        <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-gold mb-4">
-          Comment ça se passe
-        </div>
+      <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-12">
         <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary text-balance">
-          Quatre étapes, sans prise de tête.
+          Comment ça marche.
         </h2>
       </RevealOnScroll>
 

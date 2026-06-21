@@ -29,19 +29,12 @@ function InactionCard({
 export function InactionCostSection() {
   return (
     <section className="bg-amber-bg border-t border-b border-border-amber">
-      <div className="max-w-[1120px] mx-auto px-6 py-[88px]">
+      <div className="max-w-[1120px] mx-auto px-6 py-[72px]">
         {/* Header */}
         <RevealOnScroll className="max-w-[680px] mx-auto mb-10 text-center">
-          <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-danger-accent mb-4">
-            Le coût de l&apos;inaction
-          </div>
-          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3.5 text-balance">
-            Ce que ça vous coûte de ne rien changer.
+          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary text-balance">
+            Ce que ça vous coûte de ne rien faire.
           </h2>
-          <p className="text-[17px] leading-[1.6] text-[#8C7E66] text-pretty">
-            On parle souvent du prix d&apos;un site. On parle rarement du prix de ne
-            pas en avoir.
-          </p>
         </RevealOnScroll>
 
         {/* Cards */}

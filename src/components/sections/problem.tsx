@@ -36,36 +36,23 @@ function ProblemCard({
 
 export function ProblemSection() {
   return (
-    <section id="probleme" className="max-w-[1120px] mx-auto px-6 py-[88px]">
+    <section id="probleme" className="max-w-[1120px] mx-auto px-6 py-[72px]">
       {/* Header */}
-      <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-11">
-        <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-gold mb-4">
-          Le problème
-        </div>
-        <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-4 text-balance">
-          Vous allez vous reconnaître.
+      <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-10">
+        <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary text-balance">
+          Vous vous reconnaissez ?
         </h2>
-        <p className="text-[17px] leading-[1.6] text-text-muted text-pretty">
-          Que vous soyez artisan, prestataire, consultant, indépendant ou
-          commerçant — si vous avez des clients à convaincre, c&apos;est pour
-          vous.
-        </p>
       </RevealOnScroll>
 
       {/* Problem cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {PROBLEMS.map((problem, index) => (
           <ProblemCard
             key={index}
             text={problem.text}
-            delay={index < 3 ? index * 60 : (index - 3) * 60}
+            delay={index * 60}
           />
         ))}
-        <ProblemCard
-          text="Ce n'est pas votre faute. Vous êtes fort dans VOTRE métier — pas dans le web. Personne ne vous a montré comment transformer votre présence en ligne en vrais clients. C'est exactement ce que je fais."
-          delay={180}
-          isDark
-        />
       </div>
     </section>
   );

@@ -27,18 +27,12 @@ export function CalculatorSection() {
   const hoursMonth = hoursWeek * 4;
 
   return (
-    <section className="max-w-[1120px] mx-auto px-6 py-[88px]">
+    <section className="max-w-[1120px] mx-auto px-6 py-[72px]">
       {/* Header */}
       <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-10">
-        <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-gold mb-4">
-          Calculatrice
-        </div>
-        <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3.5 text-balance">
-          Combien de temps vous perdez chaque jour ?
+        <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary text-balance">
+          Combien d&apos;heures vous perdez par semaine ?
         </h2>
-        <p className="text-base text-text-muted">
-          Faites le calcul. C&apos;est souvent plus que ce qu&apos;on croit.
-        </p>
       </RevealOnScroll>
 
       <RevealOnScroll className="bg-white border border-border rounded-[18px] shadow-[0_6px_24px_rgba(45,38,20,0.06)] p-11 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

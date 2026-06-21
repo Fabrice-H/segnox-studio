@@ -48,50 +48,47 @@ export const TARGET_AUDIENCES = [
 
 export const PROBLEMS = [
   {
-    text: "Vous êtes excellent dans ce que vous faites. Mais quand on vous cherche sur Google, on ne trouve rien — ou quelque chose qui fait amateur. Et on doute de vous avant même de vous parler.",
+    text: "On vous cherche sur Google. On ne trouve rien. On passe au suivant.",
   },
   {
-    text: "Vous postez, vous êtes actif sur Instagram, Facebook, WhatsApp… et pourtant, ça ne se transforme pas en clients. Vous courez, sans avancer.",
+    text: "Vous ressemblez à quelqu'un qui vend sur Facebook. Pas à un pro établi.",
   },
   {
-    text: "Vous passez vos journées à répondre aux mêmes questions — « c'est combien ? », « vous faites quoi exactement ? », « vous êtes dispo ? » — et 9 fois sur 10, ça ne mène nulle part.",
+    text: "« C'est combien ? » « Vous êtes dispo ? » — les mêmes questions, toute la journée. Pour des curieux qui n'achètent jamais.",
   },
   {
-    text: "Pendant que vous répondez à des curieux, un concurrent qui a l'air plus pro récupère le vrai client. Lui n'est pas meilleur que vous. Il a juste l'air plus sérieux en ligne.",
-  },
-  {
-    text: "Le soir, vous êtes vidé d'avoir répété la même chose toute la journée. Sans avoir gagné un seul nouveau client.",
+    text: "Un concurrent moins bon mais plus visible récupère vos clients. Pas parce qu'il est meilleur — parce qu'on le trouve.",
   },
 ];
 
 export const SERVICES = [
   {
     number: "01",
-    title: "Un site qui trie vos clients",
+    title: "On vous trouve sur Google",
     description:
-      "Un site clair et pro, qui répond aux questions à votre place et trie les demandes avant qu'elles n'arrivent sur votre WhatsApp. Vous ne parlez qu'aux gens sérieux.",
-    features: ["Catalogue en ligne", "Formulaire pré-qualifiant", "Lien WhatsApp pré-rempli"],
+      "Quand quelqu'un cherche votre activité, c'est vous qui apparaissez. Pas votre concurrent.",
+    features: ["Visible sur Google", "Image professionnelle", "Crédibilité immédiate"],
   },
   {
     number: "02",
-    title: "Un assistant qui répond 24h/24",
+    title: "Vous arrêtez de répéter",
     description:
-      "Il répond aux questions de base même la nuit, même quand vous dormez : horaires, prix, adresse, disponibilités. Vos clients ont une réponse tout de suite, et vous, vous respirez.",
-    features: ["Réponses instantanées", "Disponible 24h/24", "Toujours dans votre ton"],
+      "Les questions de base — prix, horaires, dispo — le système répond à votre place. Même la nuit.",
+    features: ["Réponses automatiques 24/7", "FAQ intelligente", "Gain de temps immédiat"],
   },
   {
     number: "03",
-    title: "Des relances automatiques",
+    title: "Fini les curieux sans suite",
     description:
-      "Le client a demandé un devis puis a disparu ? Le système le relance gentiment à votre place. Vous arrêtez de perdre des ventes par simple oubli.",
-    features: ["Relances automatiques", "Aucune demande perdue", "Suivi clair"],
+      "Un formulaire trie les demandes avant qu'elles n'arrivent. Vous ne parlez qu'aux clients sérieux.",
+    features: ["Formulaire qualifiant", "Demandes triées", "WhatsApp pré-rempli"],
   },
   {
     number: "04",
-    title: "Une présence qui inspire confiance",
+    title: "Rien ne se perd",
     description:
-      "Vous apparaissez correctement sur Google et sur vos réseaux, avec une image qui rassure. Quand on vous cherche, on vous trouve — et on vous prend au sérieux.",
-    features: ["Visible sur Google", "Réseaux soignés", "Image pro qui rassure"],
+      "Client intéressé mais disparu ? Le système relance à votre place. Plus de ventes oubliées.",
+    features: ["Relances automatiques", "Suivi des demandes", "Aucun oubli"],
   },
 ];
 
@@ -199,27 +196,27 @@ export const OFFERS = [
 export const STEPS = [
   {
     number: 1,
-    title: "Diagnostic gratuit",
+    title: "On discute",
     description:
-      "On échange sur WhatsApp. Vous me dites votre activité et votre souci. Je vous dis franchement ce qui bloque et ce qui est possible. Gratuit, sans engagement.",
+      "Vous m'expliquez votre activité sur WhatsApp. Je vous dis ce qui est possible. Gratuit, sans engagement.",
   },
   {
     number: 2,
-    title: "Conception",
+    title: "Je conçois",
     description:
-      "Je conçois une maquette de votre futur site. Vous voyez à quoi ça va ressembler avant de payer le solde. Si ça ne vous plaît pas, on ajuste.",
+      "Vous voyez une maquette de votre futur site avant de payer. Si ça ne plaît pas, on ajuste.",
   },
   {
     number: 3,
-    title: "Mise en ligne",
+    title: "On met en ligne",
     description:
-      "Je développe, je vous envoie une pré-version à valider, puis on met en ligne. Comptez 3 à 7 jours pour une première version.",
+      "3 à 7 jours pour une première version. Vous validez, on publie.",
   },
   {
     number: 4,
-    title: "On optimise",
+    title: "Ça tourne",
     description:
-      "Une fois en ligne, on regarde ce qui marche et on améliore. Vous parlez toujours à la même personne — moi.",
+      "Votre site travaille. Je reste disponible pour les ajustements.",
   },
 ];
 

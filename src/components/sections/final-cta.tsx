@@ -25,12 +25,10 @@ export function FinalCtaSection() {
           <div className='absolute -top-20 left-1/2 -translate-x-1/2 w-[520px] h-[320px] bg-[radial-gradient(ellipse,rgba(214,178,94,0.18)_0%,transparent_70%)] blur-[30px] animate-glow pointer-events-none' />
 
           <h2 className='relative font-heading font-extrabold text-[clamp(28px,4.4vw,46px)] leading-[1.14] tracking-[-0.02em] text-white mx-auto mb-[18px] max-w-[720px] text-balance'>
-            Arrêtez de perdre des clients avant même de leur parler.
+            Prêt à arrêter de perdre des clients ?
           </h2>
           <p className='relative text-lg leading-[1.6] text-[rgba(243,236,224,0.66)] mx-auto mb-9 max-w-[540px]'>
-            Chaque jour, des clients potentiels vous cherchent et trouvent
-            quelqu&apos;un d&apos;autre. On peut changer ça, simplement. Deux
-            manières de commencer, les deux gratuites et sans engagement.
+            Diagnostic gratuit. Sans engagement. Réponse directe sur WhatsApp.
           </p>
 
           <div className='relative flex flex-wrap justify-center gap-3.5'>

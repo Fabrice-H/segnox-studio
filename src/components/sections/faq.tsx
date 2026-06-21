@@ -55,14 +55,11 @@ export function FaqSection() {
 
   return (
     <section id="faq" className="bg-white border-t border-border">
-      <div className="max-w-[820px] mx-auto px-6 py-[88px]">
+      <div className="max-w-[820px] mx-auto px-6 py-[72px]">
         {/* Header */}
-        <RevealOnScroll className="text-center mb-11">
-          <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-gold mb-4">
-            FAQ
-          </div>
+        <RevealOnScroll className="text-center mb-10">
           <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary">
-            Vos questions, mes réponses honnêtes.
+            Questions fréquentes.
           </h2>
         </RevealOnScroll>
 

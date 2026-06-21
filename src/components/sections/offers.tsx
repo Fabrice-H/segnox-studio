@@ -76,25 +76,14 @@ export function OffersSection() {
       id="offres"
       className="bg-white border-t border-b border-border"
     >
-      <div className="max-w-[1120px] mx-auto px-6 py-[88px]">
+      <div className="max-w-[1120px] mx-auto px-6 py-[72px]">
         {/* Header */}
-        <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-11">
-          <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-gold mb-4">
-            Offres
-          </div>
-          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary text-balance">
-            Trois manières de démarrer.
+        <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-10">
+          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3 text-balance">
+            Trois formules. Un seul objectif.
           </h2>
-        </RevealOnScroll>
-
-        <RevealOnScroll className="text-center max-w-[680px] mx-auto -mt-7 mb-10">
           <p className="text-base leading-[1.6] text-text-muted text-pretty">
-            Pas de prix figé sur le site, parce que votre besoin n&apos;est pas
-            celui du voisin. On regarde ensemble, et{" "}
-            <strong className="text-text-primary">
-              on fixe le prix ensemble
-            </strong>{" "}
-            — honnêtement. Paiement Wave, Orange Money ou carte bancaire,
+            On fixe le prix ensemble. Paiement Wave, Orange Money ou carte,
             possible en plusieurs fois.
           </p>
         </RevealOnScroll>
@@ -134,12 +123,6 @@ export function OffersSection() {
           </Link>
         </RevealOnScroll>
 
-        <RevealOnScroll>
-          <p className="mt-[22px] text-center text-[15px] text-text-muted text-pretty">
-            Chaque projet est différent. On fixe le prix ensemble, selon votre
-            besoin. Paiement possible en plusieurs fois.
-          </p>
-        </RevealOnScroll>
       </div>
     </section>
   );
