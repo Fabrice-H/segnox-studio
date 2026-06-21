@@ -99,11 +99,8 @@ export function HeroSection() {
             voit — et vos clients vont voir ailleurs.
           </h1>
           <p className="text-lg leading-[1.62] text-[rgba(243,236,224,0.66)] mb-3.5 max-w-[540px] text-pretty">
-            Aujourd&apos;hui, beaucoup de clients cherchent un service sur Google
-            avant de choisir. Sans présence claire, ils partent chez un
-            concurrent qui paraît plus sérieux. Je vous crée un site simple et
-            pro qui vous rend crédible — et transforme les curieux en vraies
-            demandes.
+            Vous perdez des heures à répondre aux mêmes questions. Les curieux
+            ne s&apos;engagent jamais. Pendant ce temps, vos concurrents encaissent.
           </p>
           <div className="mt-[30px]">
             <Link
