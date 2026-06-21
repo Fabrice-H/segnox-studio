@@ -58,11 +58,12 @@ export function ServicesSection() {
         {/* Header */}
         <RevealOnScroll className="max-w-[680px] mb-10">
           <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3 text-balance">
-            Ce que ça change pour vous.
+            Un site qui fonctionne comme un{" "}
+            <span className="text-gold">système d&apos;acquisition</span>.
           </h2>
           <p className="text-[17px] leading-[1.6] text-text-muted max-w-[540px] text-pretty">
-            Pas juste un site. Un système qui travaille pendant que vous faites
-            votre métier.
+            Pas une vitrine passive. Un système qui attire, qualifie et vous
+            envoie des clients prêts à acheter.
           </p>
         </RevealOnScroll>
 
@@ -79,6 +80,48 @@ export function ServicesSection() {
             />
           ))}
         </div>
+
+        {/* Qualification examples */}
+        <RevealOnScroll className="mt-10 bg-dark rounded-2xl p-8">
+          <h3 className="font-heading font-bold text-[19px] text-white mb-5 text-center">
+            Le client arrive déjà qualifié sur WhatsApp
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-5">
+              <div className="font-heading font-bold text-sm text-gold-lighter mb-2">
+                Mode & Couture
+              </div>
+              <ul className="text-[13.5px] text-[rgba(243,236,224,0.7)] space-y-1">
+                <li>→ Modèle souhaité</li>
+                <li>→ Taille / Mensuration</li>
+                <li>→ Budget</li>
+                <li>→ Délai</li>
+              </ul>
+            </div>
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-5">
+              <div className="font-heading font-bold text-sm text-gold-lighter mb-2">
+                Immobilier
+              </div>
+              <ul className="text-[13.5px] text-[rgba(243,236,224,0.7)] space-y-1">
+                <li>→ Type de bien</li>
+                <li>→ Quartier</li>
+                <li>→ Budget</li>
+                <li>→ Téléphone</li>
+              </ul>
+            </div>
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-5">
+              <div className="font-heading font-bold text-sm text-gold-lighter mb-2">
+                Automobile
+              </div>
+              <ul className="text-[13.5px] text-[rgba(243,236,224,0.7)] space-y-1">
+                <li>→ Marque / Modèle</li>
+                <li>→ Neuf ou occasion</li>
+                <li>→ Budget</li>
+                <li>→ Téléphone</li>
+              </ul>
+            </div>
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   );

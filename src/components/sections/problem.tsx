@@ -39,9 +39,12 @@ export function ProblemSection() {
     <section id="probleme" className="max-w-[1120px] mx-auto px-6 py-[72px]">
       {/* Header */}
       <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-10">
-        <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary text-balance">
-          Vous vous reconnaissez ?
+        <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3 text-balance">
+          La plupart des entreprises travaillent bien.
         </h2>
+        <p className="text-[17px] leading-[1.6] text-text-muted text-balance">
+          Mais en ligne, personne ne le voit.
+        </p>
       </RevealOnScroll>
 
       {/* Problem cards */}

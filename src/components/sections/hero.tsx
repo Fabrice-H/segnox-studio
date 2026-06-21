@@ -92,17 +92,15 @@ export function HeroSection() {
         {/* Content */}
         <RevealOnScroll>
           <div className="font-heading font-bold text-[13px] tracking-[0.16em] uppercase text-gold-lighter mb-5">
-            Sites &amp; présence pro · Abidjan
+            Systèmes de visibilité · Abidjan
           </div>
           <h1 className="font-heading font-extrabold text-[clamp(31px,4.3vw,50px)] leading-[1.1] tracking-[-0.02em] text-white mb-[22px] text-balance">
-            Vos concurrents ne sont pas meilleurs que vous. Ils sont juste
-            visibles.
+            Vos clients vous cherchent déjà. Le problème, c&apos;est qu&apos;ils ne
+            vous trouvent pas.
           </h1>
           <p className="text-lg leading-[1.62] text-[rgba(243,236,224,0.66)] mb-3.5 max-w-[540px] text-pretty">
-            Vous répondez aux mêmes questions toute la journée. Des curieux qui
-            ne s&apos;engagent jamais. Pendant ce temps, quelqu&apos;un qui paraît plus
-            pro encaisse à votre place. Ce n&apos;est pas de votre faute — personne
-            ne vous a montré comment un site qui trie vos clients change tout.
+            Un système simple qui vous rend visible sur Google, qualifie vos
+            clients et vous envoie des demandes concrètes sur WhatsApp.
           </p>
           <div className="mt-[30px]">
             <Link

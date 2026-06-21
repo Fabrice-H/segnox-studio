@@ -273,7 +273,7 @@ export const INACTION_COSTS = [
 ];
 
 export const PIPELINE_LEADS = [
-  { initials: "AD", name: "Awa D.", details: "500 000 FCFA · Cocody · robe wax" },
-  { initials: "KN", name: "Koffi N.", details: "1 200 000 FCFA · Yopougon · SUV" },
-  { initials: "FS", name: "Fatou S.", details: "250 000 FCFA · Plateau · canapé" },
+  { initials: "AD", name: "Awa D.", details: "Robe sur-mesure · Cocody · Budget 150k" },
+  { initials: "KN", name: "Koffi N.", details: "SUV occasion · Yopougon · Budget 8M" },
+  { initials: "FS", name: "Fatou S.", details: "Appartement 3p · Plateau · Budget 250k/mois" },
 ];
