@@ -5,7 +5,7 @@ import { IntegrationsSection } from "@/components/sections/integrations";
 import { ProblemSection, TargetAudienceSection } from "@/components/sections/problem";
 import { ServicesSection } from "@/components/sections/services";
 import { SystemTabsSection } from "@/components/sections/system-tabs";
-import { RealisationsSection } from "@/components/sections/realisations";
+// import { RealisationsSection } from "@/components/sections/realisations";
 import { StatsSection } from "@/components/sections/stats";
 import { QuoteSection } from "@/components/sections/quote";
 import { CalculatorSection } from "@/components/sections/calculator";
@@ -27,7 +27,7 @@ export default function Home() {
         <TargetAudienceSection />
         <ServicesSection />
         <SystemTabsSection />
-        <RealisationsSection />
+        {/* <RealisationsSection /> */}
         <StatsSection />
         <QuoteSection />
         <CalculatorSection />

@@ -15,7 +15,7 @@ export const WHATSAPP_LINKS = {
 export const NAV_LINKS = [
   { href: "#probleme", label: "Le problème" },
   { href: "#solutions", label: "Solutions" },
-  { href: "#realisations", label: "Réalisations" },
+  // { href: "#realisations", label: "Réalisations" },
   { href: "#offres", label: "Offres" },
   { href: "#faq", label: "FAQ" },
 ];

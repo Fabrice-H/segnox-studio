@@ -59,14 +59,14 @@ export function Footer() {
               Explorer
             </div>
             <ul className="space-y-[11px]">
-              <li>
+              {/* <li>
                 <Link
                   href="#realisations"
                   className="text-[rgba(243,236,224,0.72)] no-underline text-[14.5px] hover:text-gold-lighter transition-colors"
                 >
                   Réalisations
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="#offres"
