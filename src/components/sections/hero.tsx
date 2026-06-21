@@ -105,15 +105,7 @@ export function HeroSection() {
             pro qui vous rend crédible — et transforme les curieux en vraies
             demandes.
           </p>
-          <div className="flex flex-wrap gap-3.5 mt-[30px]">
-            <Link
-              href={WHATSAPP_LINKS.sitePro}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gold-light text-dark no-underline font-heading font-bold text-base py-[15px] px-[26px] rounded-[11px] hover:bg-[#dcb15a] transition-colors"
-            >
-              Je veux mon site pro
-            </Link>
+          <div className="mt-[30px]">
             <Link
               href={WHATSAPP_LINKS.apercu}
               target="_blank"
