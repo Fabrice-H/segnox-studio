@@ -105,11 +105,7 @@ export function HeroSection() {
             pro qui vous rend crédible — et transforme les curieux en vraies
             demandes.
           </p>
-          <p className="text-[15px] leading-[1.5] text-[rgba(243,236,224,0.5)] mb-[30px] max-w-[540px]">
-            Je suis Fabrice, développeur web à Abidjan. Pas une agence — juste
-            un dev qui fait le travail bien.
-          </p>
-          <div className="flex flex-wrap gap-3.5">
+          <div className="flex flex-wrap gap-3.5 mt-[30px]">
             <Link
               href={WHATSAPP_LINKS.sitePro}
               target="_blank"
