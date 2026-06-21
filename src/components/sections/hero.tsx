@@ -95,12 +95,14 @@ export function HeroSection() {
             Sites &amp; présence pro · Abidjan
           </div>
           <h1 className="font-heading font-extrabold text-[clamp(31px,4.3vw,50px)] leading-[1.1] tracking-[-0.02em] text-white mb-[22px] text-balance">
-            Vous êtes doué dans votre métier. Mais en ligne, personne ne le
-            voit — et vos clients vont voir ailleurs.
+            Vos concurrents ne sont pas meilleurs que vous. Ils sont juste
+            visibles.
           </h1>
           <p className="text-lg leading-[1.62] text-[rgba(243,236,224,0.66)] mb-3.5 max-w-[540px] text-pretty">
-            Vous perdez des heures à répondre aux mêmes questions. Les curieux
-            ne s&apos;engagent jamais. Pendant ce temps, vos concurrents encaissent.
+            Vous répondez aux mêmes questions toute la journée. Des curieux qui
+            ne s&apos;engagent jamais. Pendant ce temps, quelqu&apos;un qui paraît plus
+            pro encaisse à votre place. Ce n&apos;est pas de votre faute — personne
+            ne vous a montré comment un site qui trie vos clients change tout.
           </p>
           <div className="mt-[30px]">
             <Link
