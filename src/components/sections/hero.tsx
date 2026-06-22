@@ -98,11 +98,21 @@ export function HeroSection() {
             Vos clients vous cherchent déjà. Le problème, c&apos;est qu&apos;ils ne
             vous trouvent pas.
           </h1>
-          <p className="text-lg leading-[1.62] text-[rgba(243,236,224,0.66)] mb-3.5 max-w-[540px] text-pretty">
-            Un système simple qui vous rend visible sur Google, qualifie vos
-            clients et vous envoie des demandes concrètes sur WhatsApp.
-          </p>
-          <div className="mt-[30px]">
+          <ul className="text-[15.5px] leading-[1.7] text-[rgba(243,236,224,0.7)] mb-6 max-w-[540px] space-y-2">
+            <li className="flex items-start gap-2.5">
+              <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
+              <span>Visible sur Google — on vous trouve</span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
+              <span>Formulaire intelligent — fini les curieux</span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
+              <span>Clients qualifiés — direct sur WhatsApp</span>
+            </li>
+          </ul>
+          <div>
             <Link
               href={WHATSAPP_LINKS.apercu}
               target="_blank"

@@ -32,9 +32,13 @@ export function InactionCostSection() {
       <div className="max-w-[1120px] mx-auto px-6 py-[72px]">
         {/* Header */}
         <RevealOnScroll className="max-w-[680px] mx-auto mb-10 text-center">
-          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary text-balance">
-            Ce que ça vous coûte de ne rien faire.
+          <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3 text-balance">
+            Chaque semaine sans système,{" "}
+            <span className="text-danger">c&apos;est des clients perdus.</span>
           </h2>
+          <p className="text-[17px] leading-[1.6] text-[#8C7E66]">
+            Pas une menace. Juste la réalité.
+          </p>
         </RevealOnScroll>
 
         {/* Cards */}
@@ -50,19 +54,14 @@ export function InactionCostSection() {
         </div>
 
         {/* Bottom CTA */}
-        <RevealOnScroll className="mt-[30px] text-center max-w-[760px] mx-auto">
-          <p className="font-heading font-bold text-[clamp(17px,2.6vw,21px)] leading-[1.4] text-text-primary mb-[22px] text-balance">
-            Pas de faux compte à rebours. Juste la vérité : chaque semaine sans
-            présence pro est une semaine de clients perdus que vous ne
-            récupérerez pas.
-          </p>
+        <RevealOnScroll className="mt-8 text-center">
           <Link
             href={WHATSAPP_LINKS.voirCeQuePeuxFaire}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-[9px] bg-gold-light text-dark no-underline font-heading font-bold text-[15.5px] py-3.5 px-[26px] rounded-[11px] hover:bg-[#dcb15a] transition-colors"
           >
-            Voir ce que je peux faire pour vous — gratuitement
+            Discuter de votre situation — gratuit
           </Link>
         </RevealOnScroll>
       </div>

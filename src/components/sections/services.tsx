@@ -83,41 +83,71 @@ export function ServicesSection() {
 
         {/* Qualification examples */}
         <RevealOnScroll className="mt-10 bg-dark rounded-2xl p-8">
-          <h3 className="font-heading font-bold text-[19px] text-white mb-5 text-center">
+          <h3 className="font-heading font-bold text-[19px] text-white mb-2 text-center">
             Le client arrive déjà qualifié sur WhatsApp
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-5">
-              <div className="font-heading font-bold text-sm text-gold-lighter mb-2">
-                Mode & Couture
+          <p className="text-[14px] text-[rgba(243,236,224,0.5)] text-center mb-6">
+            Adapté à votre métier
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-4">
+              <div className="font-heading font-bold text-[13px] text-gold-lighter mb-2">
+                Mode
               </div>
-              <ul className="text-[13.5px] text-[rgba(243,236,224,0.7)] space-y-1">
-                <li>→ Modèle souhaité</li>
-                <li>→ Taille / Mensuration</li>
+              <ul className="text-[12px] text-[rgba(243,236,224,0.6)] space-y-0.5">
+                <li>→ Modèle</li>
+                <li>→ Taille</li>
                 <li>→ Budget</li>
-                <li>→ Délai</li>
               </ul>
             </div>
-            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-5">
-              <div className="font-heading font-bold text-sm text-gold-lighter mb-2">
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-4">
+              <div className="font-heading font-bold text-[13px] text-gold-lighter mb-2">
                 Immobilier
               </div>
-              <ul className="text-[13.5px] text-[rgba(243,236,224,0.7)] space-y-1">
-                <li>→ Type de bien</li>
+              <ul className="text-[12px] text-[rgba(243,236,224,0.6)] space-y-0.5">
+                <li>→ Type bien</li>
                 <li>→ Quartier</li>
                 <li>→ Budget</li>
-                <li>→ Téléphone</li>
               </ul>
             </div>
-            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-5">
-              <div className="font-heading font-bold text-sm text-gold-lighter mb-2">
-                Automobile
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-4">
+              <div className="font-heading font-bold text-[13px] text-gold-lighter mb-2">
+                Auto
               </div>
-              <ul className="text-[13.5px] text-[rgba(243,236,224,0.7)] space-y-1">
-                <li>→ Marque / Modèle</li>
-                <li>→ Neuf ou occasion</li>
+              <ul className="text-[12px] text-[rgba(243,236,224,0.6)] space-y-0.5">
+                <li>→ Marque</li>
+                <li>→ État</li>
                 <li>→ Budget</li>
-                <li>→ Téléphone</li>
+              </ul>
+            </div>
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-4">
+              <div className="font-heading font-bold text-[13px] text-gold-lighter mb-2">
+                Restaurant
+              </div>
+              <ul className="text-[12px] text-[rgba(243,236,224,0.6)] space-y-0.5">
+                <li>→ Nb personnes</li>
+                <li>→ Date/heure</li>
+                <li>→ Occasion</li>
+              </ul>
+            </div>
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-4">
+              <div className="font-heading font-bold text-[13px] text-gold-lighter mb-2">
+                Beauté
+              </div>
+              <ul className="text-[12px] text-[rgba(243,236,224,0.6)] space-y-0.5">
+                <li>→ Service</li>
+                <li>→ Date/heure</li>
+                <li>→ Quartier</li>
+              </ul>
+            </div>
+            <div className="bg-[rgba(243,236,224,0.06)] border border-[rgba(214,178,94,0.15)] rounded-xl p-4">
+              <div className="font-heading font-bold text-[13px] text-gold-lighter mb-2">
+                Artisan
+              </div>
+              <ul className="text-[12px] text-[rgba(243,236,224,0.6)] space-y-0.5">
+                <li>→ Besoin</li>
+                <li>→ Lieu</li>
+                <li>→ Urgence</li>
               </ul>
             </div>
           </div>

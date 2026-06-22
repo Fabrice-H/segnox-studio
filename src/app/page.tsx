@@ -1,15 +1,11 @@
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { HeroSection } from "@/components/sections/hero";
-// import { IntegrationsSection } from "@/components/sections/integrations";
 import { ProblemSection } from "@/components/sections/problem";
+import { SystemEquationSection } from "@/components/sections/system-equation";
 import { ServicesSection } from "@/components/sections/services";
-// import { SystemTabsSection } from "@/components/sections/system-tabs";
-// import { RealisationsSection } from "@/components/sections/realisations";
-// import { StatsSection } from "@/components/sections/stats";
 import { QuoteSection } from "@/components/sections/quote";
 import { CalculatorSection } from "@/components/sections/calculator";
-// import { ShockCtaSection } from "@/components/sections/shock-cta";
 import { InactionCostSection } from "@/components/sections/inaction-cost";
 import { OffersSection } from "@/components/sections/offers";
 import { StepsSection } from "@/components/sections/steps";
@@ -23,8 +19,9 @@ export default function Home() {
       <main>
         <HeroSection />
         <ProblemSection />
-        <QuoteSection />
+        <SystemEquationSection />
         <ServicesSection />
+        <QuoteSection />
         <CalculatorSection />
         <InactionCostSection />
         <OffersSection />
