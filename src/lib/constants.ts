@@ -4,12 +4,12 @@ export const GOOGLE_REVIEW_LINK = "https://g.page/r/CeqPPydYugf8EAE/review";
 
 export const WHATSAPP_LINKS = {
   default: `https://wa.me/${WHATSAPP_NUMBER}`,
-  sitePro: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20Fabrice%2C%20je%20veux%20mon%20site%20pro.`,
-  apercu: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20Fabrice%2C%20je%20veux%20un%20aper%C3%A7u%20gratuit%20de%20mon%20futur%20site.`,
-  diagnostic: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%2C%20je%20veux%20un%20diagnostic`,
-  recupererTemps: `https://wa.me/${WHATSAPP_NUMBER}?text=Je%20veux%20r%C3%A9cup%C3%A9rer%20ce%20temps`,
-  presencePro: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20Fabrice%2C%20je%20veux%20une%20vraie%20pr%C3%A9sence%20professionnelle%20en%20ligne.`,
-  voirCeQuePeuxFaire: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20Fabrice%2C%20je%20veux%20voir%20ce%20que%20vous%20pouvez%20faire%20pour%20moi.`,
+  sitePro: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20SEGNOX%20Studio%2C%20je%20veux%20mon%20site%20pro.`,
+  apercu: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20SEGNOX%20Studio%2C%20je%20veux%20un%20aper%C3%A7u%20gratuit%20de%20mon%20futur%20site.`,
+  diagnostic: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20SEGNOX%20Studio%2C%20je%20veux%20un%20diagnostic.`,
+  recupererTemps: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20SEGNOX%20Studio%2C%20je%20veux%20r%C3%A9cup%C3%A9rer%20ce%20temps.`,
+  presencePro: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20SEGNOX%20Studio%2C%20je%20veux%20une%20vraie%20pr%C3%A9sence%20professionnelle%20en%20ligne.`,
+  voirCeQuePeuxFaire: `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20SEGNOX%20Studio%2C%20je%20veux%20voir%20ce%20que%20vous%20pouvez%20faire%20pour%20moi.`,
 };
 
 export const NAV_LINKS = [
