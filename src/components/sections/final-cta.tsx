@@ -25,10 +25,13 @@ export function FinalCtaSection() {
           <div className='absolute -top-20 left-1/2 -translate-x-1/2 w-[520px] h-[320px] bg-[radial-gradient(ellipse,rgba(214,178,94,0.18)_0%,transparent_70%)] blur-[30px] animate-glow pointer-events-none' />
 
           <h2 className='relative font-heading font-extrabold text-[clamp(28px,4.4vw,46px)] leading-[1.14] tracking-[-0.02em] text-white mx-auto mb-[18px] max-w-[720px] text-balance'>
-            Prêt à arrêter de perdre des clients ?
+            Prêt à avoir un système qui travaille pour vous ?
           </h2>
-          <p className='relative text-lg leading-[1.6] text-[rgba(243,236,224,0.66)] mx-auto mb-9 max-w-[540px]'>
-            Diagnostic gratuit. Sans engagement. Réponse directe sur WhatsApp.
+          <p className='relative text-lg leading-[1.6] text-[rgba(243,236,224,0.66)] mx-auto mb-3 max-w-[540px]'>
+            Un site qui qualifie vos clients. Un suivi pour qu&apos;il reste performant.
+          </p>
+          <p className='relative text-[15px] text-[rgba(243,236,224,0.5)] mx-auto mb-8 max-w-[540px]'>
+            Diagnostic gratuit · Sans engagement · Réponse directe sur WhatsApp
           </p>
 
           <div className='relative flex flex-wrap justify-center gap-3.5'>

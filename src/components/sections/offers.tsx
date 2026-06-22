@@ -103,24 +103,57 @@ export function OffersSection() {
           ))}
         </div>
 
-        {/* Le site qui travaille */}
-        <RevealOnScroll className="mt-[22px] bg-dark rounded-2xl p-[26px_32px] flex flex-wrap items-center justify-between gap-[18px]">
-          <div>
-            <div className="font-heading font-extrabold text-[19px] text-white">
-              Le site qui travaille
+        {/* Le site qui travaille - Abonnement */}
+        <RevealOnScroll className="mt-8 relative bg-dark rounded-2xl p-8 overflow-hidden">
+          {/* Glow effect */}
+          <div className="absolute -top-20 -right-20 w-[300px] h-[300px] bg-[radial-gradient(circle,rgba(214,178,94,0.15)_0%,transparent_70%)] pointer-events-none" />
+
+          <div className="relative">
+            <div className="flex items-center gap-3 mb-4">
+              <h3 className="font-heading font-extrabold text-[22px] text-white">
+                Le site qui travaille
+              </h3>
+              <span className="bg-gold/20 text-gold text-[11px] font-bold tracking-wider uppercase py-1 px-2.5 rounded-full">
+                Abonnement
+              </span>
             </div>
-            <div className="text-[15px] text-[rgba(243,236,224,0.6)] mt-1">
-              Un site, ça vit. Mises à jour, petits changements, optimisation,
-              dépannage : je m&apos;occupe de tout dans la durée, en suivi mensuel
-              léger. On en parle si ça vous intéresse — sans engagement.
+
+            <p className="text-[16px] text-[rgba(243,236,224,0.7)] mb-6 max-w-[600px]">
+              Votre site reste performant, à jour, et continue de vous ramener des clients.
+              Je m&apos;occupe de tout — vous vous concentrez sur votre métier.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+              <div className="flex items-start gap-2.5">
+                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
+                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Mises à jour régulières</span>
+              </div>
+              <div className="flex items-start gap-2.5">
+                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
+                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Modifications incluses</span>
+              </div>
+              <div className="flex items-start gap-2.5">
+                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
+                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Dépannage prioritaire</span>
+              </div>
+              <div className="flex items-start gap-2.5">
+                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
+                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Optimisation continue</span>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <Link
+                href="#diagnostic"
+                className="bg-gold-light text-dark no-underline font-heading font-bold text-[15px] py-3 px-6 rounded-[10px] hover:bg-[#dcb15a] transition-colors"
+              >
+                Souscrire à l&apos;abonnement
+              </Link>
+              <span className="text-[13px] text-[rgba(243,236,224,0.5)]">
+                Sans engagement · Annulable à tout moment
+              </span>
             </div>
           </div>
-          <Link
-            href="#diagnostic"
-            className="bg-transparent text-gold-lighter no-underline font-heading font-bold text-[14.5px] py-3 px-[22px] rounded-[10px] border border-[rgba(214,178,94,0.45)] whitespace-nowrap hover:bg-[rgba(214,178,94,0.1)] transition-colors"
-          >
-            En savoir plus →
-          </Link>
         </RevealOnScroll>
 
       </div>
