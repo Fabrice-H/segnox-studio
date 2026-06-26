@@ -1,21 +1,25 @@
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/reveal-on-scroll";
-import { OFFERS } from "@/lib/constants";
+import { OFFERS, WHATSAPP_LINKS } from "@/lib/constants";
 
 function OfferCard({
   name,
   tagline,
+  idealFor,
   features,
   highlighted = false,
   badge,
+  cta,
   delay = 0,
 }: {
   name: string;
   tagline: string;
+  idealFor?: string;
   features: string[];
   highlighted?: boolean;
   badge?: string;
+  cta?: string;
   delay?: number;
 }) {
   return (
@@ -33,12 +37,18 @@ function OfferCard({
         </span>
       )}
 
-      <h3 className="font-heading font-extrabold text-[22px] text-text-primary mb-2">
+      <h3 className="font-heading font-extrabold text-[24px] text-text-primary mb-1">
         {name}
       </h3>
-      <p className="font-heading text-[16.5px] font-bold leading-[1.35] text-text-primary mb-5">
+      <p className="font-heading text-[16px] font-bold leading-[1.4] text-gold-dark mb-3">
         {tagline}
       </p>
+
+      {idealFor && (
+        <p className="text-[13.5px] text-text-muted mb-5 italic">
+          {idealFor}
+        </p>
+      )}
 
       <ul className="flex flex-col gap-3 flex-1 mb-[26px]">
         {features.map((feature) => (
@@ -57,14 +67,16 @@ function OfferCard({
       </ul>
 
       <Link
-        href="#diagnostic"
+        href={WHATSAPP_LINKS.diagnostic}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`text-center no-underline font-heading font-bold text-[15px] py-[13px] rounded-[10px] transition-colors ${
           highlighted
             ? "bg-gold-light text-dark hover:bg-[#dcb15a]"
             : "bg-transparent text-gold-dark border border-gold/45 hover:bg-gold/8"
         }`}
       >
-        Choisir
+        {cta || "Choisir"}
       </Link>
     </RevealOnScroll>
   );
@@ -80,11 +92,11 @@ export function OffersSection() {
         {/* Header */}
         <RevealOnScroll className="text-center max-w-[680px] mx-auto mb-10">
           <h2 className="font-heading font-extrabold text-[clamp(28px,4vw,42px)] leading-[1.12] tracking-[-0.02em] text-text-primary mb-3 text-balance">
-            Trois formules. Un seul objectif.
+            Choisissez votre transformation.
           </h2>
           <p className="text-base leading-[1.6] text-text-muted text-pretty">
-            On fixe le prix ensemble. Paiement Wave, Orange Money ou carte,
-            possible en plusieurs fois.
+            Prix fixé ensemble selon votre besoin. Paiement Wave, Orange Money
+            ou carte — possible en plusieurs fois.
           </p>
         </RevealOnScroll>
 
@@ -95,67 +107,102 @@ export function OffersSection() {
               key={offer.name}
               name={offer.name}
               tagline={offer.tagline}
+              idealFor={offer.idealFor}
               features={offer.features}
               highlighted={offer.highlighted}
               badge={offer.badge}
+              cta={offer.cta}
               delay={index * 80}
             />
           ))}
         </div>
 
-        {/* Le site qui travaille - Abonnement */}
-        <RevealOnScroll className="mt-8 relative bg-dark rounded-2xl p-8 overflow-hidden">
+        {/* Abonnement - Tranquillité */}
+        <RevealOnScroll className="mt-10 relative bg-dark rounded-2xl overflow-hidden">
           {/* Glow effect */}
           <div className="absolute -top-20 -right-20 w-[300px] h-[300px] bg-[radial-gradient(circle,rgba(214,178,94,0.15)_0%,transparent_70%)] pointer-events-none" />
 
-          <div className="relative">
-            <div className="flex items-center gap-3 mb-4">
-              <h3 className="font-heading font-extrabold text-[22px] text-white">
-                Le site qui travaille
-              </h3>
-              <span className="bg-gold/20 text-gold text-[11px] font-bold tracking-wider uppercase py-1 px-2.5 rounded-full">
-                Abonnement
-              </span>
-            </div>
+          <div className="relative p-8 md:p-10">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <h3 className="font-heading font-extrabold text-[24px] text-white">
+                    Tranquillité
+                  </h3>
+                  <span className="bg-gold/20 text-gold text-[11px] font-bold tracking-wider uppercase py-1 px-2.5 rounded-full">
+                    Abonnement mensuel
+                  </span>
+                </div>
 
-            <p className="text-[16px] text-[rgba(243,236,224,0.7)] mb-6 max-w-[600px]">
-              Votre site reste performant, à jour, et continue de vous ramener des clients.
-              Je m&apos;occupe de tout — vous vous concentrez sur votre métier.
-            </p>
+                <p className="text-[17px] text-[rgba(243,236,224,0.8)] mb-2 font-medium">
+                  Votre site continue de performer. Vous restez concentré sur
+                  votre métier.
+                </p>
+                <p className="text-[15px] text-[rgba(243,236,224,0.55)] mb-6">
+                  Je m&apos;occupe de tout : mises à jour, modifications,
+                  optimisation, dépannage.
+                </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-              <div className="flex items-start gap-2.5">
-                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
-                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Mises à jour régulières</span>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="flex items-center gap-2.5">
+                    <Check
+                      size={16}
+                      className="flex-none text-gold"
+                      strokeWidth={3}
+                    />
+                    <span className="text-[14px] text-[rgba(243,236,224,0.75)]">
+                      Site toujours à jour
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <Check
+                      size={16}
+                      className="flex-none text-gold"
+                      strokeWidth={3}
+                    />
+                    <span className="text-[14px] text-[rgba(243,236,224,0.75)]">
+                      Modifications incluses
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <Check
+                      size={16}
+                      className="flex-none text-gold"
+                      strokeWidth={3}
+                    />
+                    <span className="text-[14px] text-[rgba(243,236,224,0.75)]">
+                      Dépannage prioritaire
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <Check
+                      size={16}
+                      className="flex-none text-gold"
+                      strokeWidth={3}
+                    />
+                    <span className="text-[14px] text-[rgba(243,236,224,0.75)]">
+                      Support WhatsApp direct
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-start gap-2.5">
-                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
-                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Modifications incluses</span>
-              </div>
-              <div className="flex items-start gap-2.5">
-                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
-                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Dépannage prioritaire</span>
-              </div>
-              <div className="flex items-start gap-2.5">
-                <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
-                <span className="text-[14px] text-[rgba(243,236,224,0.8)]">Optimisation continue</span>
-              </div>
-            </div>
 
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                href="#diagnostic"
-                className="bg-gold-light text-dark no-underline font-heading font-bold text-[15px] py-3 px-6 rounded-[10px] hover:bg-[#dcb15a] transition-colors"
-              >
-                Souscrire à l&apos;abonnement
-              </Link>
-              <span className="text-[13px] text-[rgba(243,236,224,0.5)]">
-                Sans engagement · Annulable à tout moment
-              </span>
+              <div className="text-center lg:text-right">
+                <Link
+                  href={WHATSAPP_LINKS.diagnostic}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gold-light text-dark no-underline font-heading font-bold text-[15px] py-3.5 px-8 rounded-[10px] hover:bg-[#dcb15a] transition-colors mb-3"
+                >
+                  Rester tranquille
+                </Link>
+                <p className="text-[13px] text-[rgba(243,236,224,0.45)]">
+                  Sans engagement · Annulable à tout moment
+                </p>
+              </div>
             </div>
           </div>
         </RevealOnScroll>
-
       </div>
     </section>
   );
