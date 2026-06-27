@@ -17,6 +17,7 @@ export const NAV_LINKS = [
   { href: "#solutions", label: "Solutions" },
   // { href: "#realisations", label: "Réalisations" },
   { href: "#offres", label: "Offres" },
+  { href: "#a-propos", label: "À propos" },
   { href: "#faq", label: "FAQ" },
 ];
 
@@ -248,7 +249,7 @@ export const FAQ_DATA = [
   {
     question: "Vous êtes une agence ?",
     answer:
-      "Non. Je suis un développeur indépendant, basé à Abidjan. Vous parlez directement à la personne qui fait le travail — pas à un commercial, pas à un intermédiaire. C'est plus simple, plus rapide, et souvent moins cher.",
+      "Non. Je suis un développeur indépendant, basé à Abidjan. Avant de créer SEGNOX Studio, j'ai travaillé sur des plateformes bancaires, des applications métier et des solutions e-commerce. Aujourd'hui, vous parlez directement à la personne qui fait le travail — pas à un commercial, pas à un intermédiaire. C'est plus simple, plus rapide, et souvent moins cher.",
   },
   {
     question: "C'est pour qui ?",

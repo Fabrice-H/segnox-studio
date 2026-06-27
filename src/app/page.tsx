@@ -9,6 +9,7 @@ import { CalculatorSection } from "@/components/sections/calculator";
 import { InactionCostSection } from "@/components/sections/inaction-cost";
 import { OffersSection } from "@/components/sections/offers";
 import { StepsSection } from "@/components/sections/steps";
+import { AboutSection } from "@/components/sections/about";
 import { FaqSection } from "@/components/sections/faq";
 import { FinalCtaSection } from "@/components/sections/final-cta";
 
@@ -26,6 +27,7 @@ export default function Home() {
         <InactionCostSection />
         <OffersSection />
         <StepsSection />
+        <AboutSection />
         <FaqSection />
         <FinalCtaSection />
       </main>
