@@ -36,35 +36,30 @@ export function AboutSection() {
 
             <div className="space-y-4 text-[16px] leading-[1.7] text-text-secondary">
               <p>
-                Depuis plusieurs années, je développe des applications web et
-                mobiles pour des banques, des entreprises et des organisations
-                en Côte d&apos;Ivoire.
-              </p>
-
-              <p>
-                Au fil de ces expériences, j&apos;ai remarqué une chose.
-              </p>
-
-              <p>
-                Beaucoup de petites entreprises travaillent très bien. Mais
-                lorsqu&apos;un client les cherche sur Internet, elles sont
-                souvent difficiles à trouver, leur image manque de crédibilité
-                ou elles passent leurs journées à répondre aux mêmes questions
-                sur WhatsApp.
-              </p>
-
-              <p>
-                J&apos;ai créé{" "}
+                Je suis développeur web et fondateur de{" "}
                 <span className="font-semibold text-text-primary">
                   SEGNOX Studio
-                </span>{" "}
-                pour résoudre ce problème.
+                </span>.
               </p>
 
               <p>
-                Mon objectif est simple : concevoir des sites web modernes qui
-                mettent votre activité en valeur, inspirent confiance et vous
-                aident à recevoir davantage de demandes.
+                Avant de lancer le studio, j&apos;ai travaillé sur des
+                plateformes e-commerce, des applications de gestion, des projets
+                institutionnels et, aujourd&apos;hui, sur des applications
+                internes dans le secteur bancaire.
+              </p>
+
+              <p>
+                Une chose m&apos;a marqué : beaucoup d&apos;entreprises
+                travaillent très bien, mais leur présence en ligne ne leur
+                permet pas d&apos;être perçues à leur juste valeur.
+              </p>
+
+              <p>
+                C&apos;est cette conviction qui a donné naissance à{" "}
+                <span className="font-semibold text-text-primary">
+                  SEGNOX Studio
+                </span>.
               </p>
 
               <p>
@@ -82,10 +77,10 @@ export function AboutSection() {
             <div className="mt-8 p-5 bg-white rounded-xl border border-border">
               <p className="text-[14.5px] leading-[1.6] text-text-muted italic">
                 « Avant de créer SEGNOX Studio, j&apos;ai participé au
-                développement de plateformes bancaires, d&apos;applications
-                métier, de solutions e-commerce et de sites institutionnels.
-                Aujourd&apos;hui, j&apos;applique cette même exigence pour aider
-                les PME à développer leur présence en ligne. »
+                développement de plateformes e-commerce, d&apos;applications
+                métier et de solutions utilisées par des entreprises et des
+                institutions. Aujourd&apos;hui, je mets cette expérience au
+                service des PME qui veulent développer leur présence en ligne. »
               </p>
             </div>
 
