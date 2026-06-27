@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/reveal-on-scroll";
 import { OFFERS, WHATSAPP_LINKS } from "@/lib/constants";
 
@@ -7,7 +7,9 @@ function OfferCard({
   name,
   tagline,
   idealFor,
-  features,
+  gains,
+  inclusions,
+  perfectFor,
   highlighted = false,
   badge,
   cta,
@@ -16,7 +18,9 @@ function OfferCard({
   name: string;
   tagline: string;
   idealFor?: string;
-  features: string[];
+  gains: string[];
+  inclusions: string[];
+  perfectFor?: string;
   highlighted?: boolean;
   badge?: string;
   cta?: string;
@@ -50,21 +54,55 @@ function OfferCard({
         </p>
       )}
 
-      <ul className="flex flex-col gap-3 flex-1 mb-[26px]">
-        {features.map((feature) => (
-          <li
-            key={feature}
-            className="flex gap-2.5 items-start text-[14.5px] text-text-secondary"
-          >
-            <Check
-              size={16}
-              className="flex-none mt-0.5 text-gold"
-              strokeWidth={3}
-            />
-            {feature}
-          </li>
-        ))}
-      </ul>
+      {/* Gains - Ce que vous gagnez */}
+      <div className="mb-5">
+        <div className="flex items-center gap-2 mb-3">
+          <Sparkles size={14} className="text-gold" />
+          <span className="text-[11px] font-bold tracking-wider uppercase text-gold-dark">
+            Ce que vous gagnez
+          </span>
+        </div>
+        <ul className="flex flex-col gap-2.5">
+          {gains.map((gain) => (
+            <li
+              key={gain}
+              className="flex gap-2.5 items-start text-[14.5px] text-text-primary font-medium"
+            >
+              <Check
+                size={16}
+                className="flex-none mt-0.5 text-gold"
+                strokeWidth={3}
+              />
+              {gain}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Inclusions - Ce qui est inclus */}
+      <div className="flex-1 mb-5">
+        <div className="text-[11px] font-bold tracking-wider uppercase text-text-muted mb-3">
+          Ce qui est inclus
+        </div>
+        <ul className="flex flex-col gap-2">
+          {inclusions.map((inclusion) => (
+            <li
+              key={inclusion}
+              className="flex gap-2.5 items-start text-[13.5px] text-text-secondary"
+            >
+              <span className="text-gold/60">→</span>
+              {inclusion}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Perfect for */}
+      {perfectFor && (
+        <p className="text-[12px] text-text-muted mb-4 text-center">
+          Parfait pour : <span className="font-medium">{perfectFor}</span>
+        </p>
+      )}
 
       <Link
         href={WHATSAPP_LINKS.diagnostic}
@@ -108,7 +146,9 @@ export function OffersSection() {
               name={offer.name}
               tagline={offer.tagline}
               idealFor={offer.idealFor}
-              features={offer.features}
+              gains={offer.gains}
+              inclusions={offer.inclusions}
+              perfectFor={offer.perfectFor}
               highlighted={offer.highlighted}
               badge={offer.badge}
               cta={offer.cta}
@@ -135,12 +175,10 @@ export function OffersSection() {
                 </div>
 
                 <p className="text-[17px] text-[rgba(243,236,224,0.8)] mb-2 font-medium">
-                  Votre site continue de performer. Vous restez concentré sur
-                  votre métier.
+                  Vous ne touchez à rien. Votre système reste performant.
                 </p>
                 <p className="text-[15px] text-[rgba(243,236,224,0.55)] mb-6">
-                  Je m&apos;occupe de tout : mises à jour, modifications,
-                  optimisation, dépannage.
+                  Mises à jour, modifications, optimisation, dépannage — je gère tout pour vous.
                 </p>
 
                 <div className="grid grid-cols-2 gap-3">
@@ -151,7 +189,7 @@ export function OffersSection() {
                       strokeWidth={3}
                     />
                     <span className="text-[14px] text-[rgba(243,236,224,0.75)]">
-                      Site toujours à jour
+                      Système toujours optimisé
                     </span>
                   </div>
                   <div className="flex items-center gap-2.5">
@@ -161,7 +199,7 @@ export function OffersSection() {
                       strokeWidth={3}
                     />
                     <span className="text-[14px] text-[rgba(243,236,224,0.75)]">
-                      Modifications incluses
+                      Modifications illimitées
                     </span>
                   </div>
                   <div className="flex items-center gap-2.5">
@@ -194,7 +232,7 @@ export function OffersSection() {
                   rel="noopener noreferrer"
                   className="inline-block bg-gold-light text-dark no-underline font-heading font-bold text-[15px] py-3.5 px-8 rounded-[10px] hover:bg-[#dcb15a] transition-colors mb-3"
                 >
-                  Rester tranquille
+                  Déléguer la technique
                 </Link>
                 <p className="text-[13px] text-[rgba(243,236,224,0.45)]">
                   Sans engagement · Annulable à tout moment
