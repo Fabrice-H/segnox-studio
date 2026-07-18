@@ -164,8 +164,8 @@ export const OFFERS = [
     idealFor: "Vous n'avez rien ou juste une page Facebook.",
     gains: [
       "Les clients vous trouvent sur Google",
-      "Vous inspirez confiance dès le premier regard",
-      "Ils vous contactent directement sur WhatsApp",
+      "Votre site donne envie de vous contacter",
+      "Ils vous écrivent sur WhatsApp",
     ],
     inclusions: [
       "Site professionnel sur-mesure",
@@ -179,12 +179,12 @@ export const OFFERS = [
   },
   {
     name: "Altitude",
-    tagline: "Attirez les bons clients.",
+    tagline: "Recevez des demandes qualifiées.",
     idealFor: "Vous perdez du temps avec les curieux.",
     gains: [
       "Seuls les clients sérieux vous contactent",
       "Fini les mêmes questions toute la journée",
-      "Vous recevez des demandes prêtes à acheter",
+      "Chaque demande arrive avec budget et besoin",
     ],
     inclusions: [
       "Tout Décollage",
@@ -195,16 +195,16 @@ export const OFFERS = [
     perfectFor: "Mode, immobilier, services",
     highlighted: true,
     badge: "LE PLUS CHOISI",
-    cta: "Attirer plus de clients",
+    cta: "Recevoir des demandes qualifiées",
   },
   {
     name: "Pilote Auto",
     tagline: "Tout tourne sans vous.",
-    idealFor: "Vous voulez scaler sans embaucher.",
+    idealFor: "Vous voulez grandir sans embaucher.",
     gains: [
-      "Votre business tourne même quand vous dormez",
-      "Les prospects sont relancés automatiquement",
-      "Vous encaissez sans lever le petit doigt",
+      "Le site répond et relance à votre place",
+      "Les prospects oubliés reviennent",
+      "Vous encaissez en ligne",
     ],
     inclusions: [
       "Tout Altitude",
@@ -212,9 +212,9 @@ export const OFFERS = [
       "Paiements en ligne (Wave, OM, Carte)",
       "3 mois de suivi inclus",
     ],
-    perfectFor: "Entrepreneurs ambitieux",
+    perfectFor: "Prestataires qui veulent grandir",
     highlighted: false,
-    cta: "Automatiser mon business",
+    cta: "Automatiser mon activité",
   },
 ];
 
