@@ -73,17 +73,6 @@ export function AboutSection() {
               </p>
             </div>
 
-            {/* Credibility line */}
-            <div className="mt-8 p-5 bg-white rounded-xl border border-border">
-              <p className="text-[14.5px] leading-[1.6] text-text-muted italic">
-                « Avant de créer SEGNOX Studio, j&apos;ai participé au
-                développement de plateformes e-commerce, d&apos;applications
-                métier et de solutions utilisées par des entreprises et des
-                institutions. Aujourd&apos;hui, je mets cette expérience au
-                service des PME qui veulent développer leur présence en ligne. »
-              </p>
-            </div>
-
             {/* CTA */}
             <div className="mt-8">
               <Link

@@ -274,7 +274,7 @@ export const FAQ_DATA = [
   {
     question: "Et si ça ne marche pas pour moi ?",
     answer:
-      "Je suis honnête : je ne fais pas de miracle, et je ne promets pas de vous rendre riche. Je fais un travail solide qui vous fait gagner du temps et de la crédibilité. Le diagnostic est gratuit — vous verrez par vous-même avant de décider.",
+      "Je ne fais pas de miracle, et je ne promets pas de vous rendre riche. Je fais un travail solide qui vous fait gagner du temps et de la crédibilité. Le diagnostic est gratuit — vous verrez par vous-même avant de décider.",
   },
 ];
 
