@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Check, MapPin, Clock, Star, ArrowRight } from "lucide-react";
+import {
+  Check,
+  MapPin,
+  Clock,
+  Star,
+  ArrowRight,
+  Building2,
+  Car,
+  Shirt,
+  UtensilsCrossed,
+  Scissors,
+  Wrench,
+  BarChart3,
+  Stethoscope,
+  type LucideIcon,
+} from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { siteConfig } from "@/lib/seo";
@@ -110,15 +125,15 @@ function LocalPageJsonLd() {
   );
 }
 
-const sectors = [
-  { name: "Immobilier", icon: "🏠" },
-  { name: "Automobile", icon: "🚗" },
-  { name: "Mode & Boutique", icon: "👗" },
-  { name: "Restaurant", icon: "🍽️" },
-  { name: "Salon de coiffure", icon: "💇" },
-  { name: "Artisan", icon: "🔧" },
-  { name: "Coach & Consultant", icon: "📊" },
-  { name: "Clinique & Santé", icon: "🏥" },
+const sectors: { name: string; icon: LucideIcon }[] = [
+  { name: "Immobilier", icon: Building2 },
+  { name: "Automobile", icon: Car },
+  { name: "Mode & Boutique", icon: Shirt },
+  { name: "Restaurant", icon: UtensilsCrossed },
+  { name: "Salon de coiffure", icon: Scissors },
+  { name: "Artisan", icon: Wrench },
+  { name: "Coach & Consultant", icon: BarChart3 },
+  { name: "Clinique & Santé", icon: Stethoscope },
 ];
 
 const benefits = [
@@ -264,17 +279,22 @@ export default function CreationSiteWebAbidjan() {
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {sectors.map((sector) => (
-                <div
-                  key={sector.name}
-                  className="bg-cream rounded-xl p-5 text-center border border-border hover:border-gold/50 transition-colors"
-                >
-                  <span className="text-3xl mb-2 block">{sector.icon}</span>
-                  <span className="font-heading font-semibold text-text-primary">
-                    {sector.name}
-                  </span>
-                </div>
-              ))}
+              {sectors.map((sector) => {
+                const Icon = sector.icon;
+                return (
+                  <div
+                    key={sector.name}
+                    className="bg-cream rounded-xl p-6 text-center border border-border hover:border-gold/50 transition-colors"
+                  >
+                    <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-gold/10 flex items-center justify-center">
+                      <Icon size={24} className="text-gold" strokeWidth={1.5} />
+                    </div>
+                    <span className="font-heading font-semibold text-text-primary">
+                      {sector.name}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
