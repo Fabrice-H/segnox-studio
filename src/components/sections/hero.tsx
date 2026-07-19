@@ -101,15 +101,15 @@ export function HeroSection() {
           <ul className="text-[15.5px] leading-[1.7] text-[rgba(243,236,224,0.7)] mb-6 max-w-[540px] space-y-2">
             <li className="flex items-start gap-2.5">
               <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
-              <span>Visible sur Google — on vous trouve</span>
+              <span>Visible sur Google, on vous trouve</span>
             </li>
             <li className="flex items-start gap-2.5">
               <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
-              <span>Formulaire intelligent — fini les curieux</span>
+              <span>Formulaire intelligent, fini les curieux</span>
             </li>
             <li className="flex items-start gap-2.5">
               <Check size={18} className="flex-none mt-0.5 text-gold" strokeWidth={3} />
-              <span>Clients qualifiés — direct sur WhatsApp</span>
+              <span>Clients qualifiés, direct sur WhatsApp</span>
             </li>
           </ul>
           <div>

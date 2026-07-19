@@ -94,7 +94,7 @@ export function RealisationsSection() {
         <RevealOnScroll>
           <p className="mt-[26px] text-[15px] leading-[1.6] text-text-muted text-pretty max-w-[680px]">
             Je démarre avec une petite poignée de clients, et je le dis
-            franchement. Ces résultats sont réels — je préfère deux exemples
+            franchement. Ces résultats sont réels. Je préfère deux exemples
             vrais que dix faux.
           </p>
         </RevealOnScroll>

@@ -105,7 +105,7 @@ export function CalculatorSection() {
               className="inline-flex items-center gap-[9px] bg-whatsapp text-whatsapp-dark no-underline font-heading font-bold text-[15px] py-[13px] px-6 rounded-[11px] hover:brightness-105 transition-all"
             >
               <WhatsAppIcon />
-              Récupérer ce temps — c&apos;est gratuit
+              Récupérer ce temps, c&apos;est gratuit
             </Link>
           </div>
         </div>

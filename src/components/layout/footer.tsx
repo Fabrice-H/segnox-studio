@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <p className="text-[14.5px] leading-relaxed text-[rgba(243,236,224,0.5)] max-w-[300px]">
               Je conçois des sites simples et pros pour les petites entreprises
-              d&apos;Abidjan — crédibles, visibles, et qui transforment les curieux en
+              d&apos;Abidjan. Crédibles, visibles, et qui transforment les curieux en
               clients.
             </p>
           </div>

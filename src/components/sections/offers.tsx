@@ -134,7 +134,7 @@ export function OffersSection() {
           </h2>
           <p className="text-base leading-[1.6] text-text-muted text-pretty">
             Prix fixé ensemble selon votre besoin. Paiement Wave, Orange Money
-            ou carte — possible en plusieurs fois.
+            ou carte, possible en plusieurs fois.
           </p>
         </RevealOnScroll>
 
@@ -178,7 +178,7 @@ export function OffersSection() {
                   Vous ne touchez à rien. Votre système reste performant.
                 </p>
                 <p className="text-[15px] text-[rgba(243,236,224,0.55)] mb-6">
-                  Mises à jour, modifications, optimisation, dépannage — je gère tout pour vous.
+                  Mises à jour, modifications, optimisation, dépannage. Je gère tout pour vous.
                 </p>
 
                 <div className="grid grid-cols-2 gap-3">

@@ -61,7 +61,7 @@ export function InactionCostSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-[9px] bg-gold-light text-dark no-underline font-heading font-bold text-[15.5px] py-3.5 px-[26px] rounded-[11px] hover:bg-[#dcb15a] transition-colors"
           >
-            Discuter de votre situation — gratuit
+            Discuter de votre situation, c&apos;est gratuit
           </Link>
         </RevealOnScroll>
       </div>

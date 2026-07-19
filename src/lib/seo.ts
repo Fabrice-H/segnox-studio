@@ -104,7 +104,7 @@ const primaryKeywords = [
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Création de site web à Abidjan — Développeur web Côte d'Ivoire | ${siteConfig.name}`,
+    default: `Création de site web à Abidjan | Développeur web Côte d'Ivoire | ${siteConfig.name}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -124,7 +124,7 @@ export const defaultMetadata: Metadata = {
     locale: 'fr_CI',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Création de site web à Abidjan — Développeur web professionnel | ${siteConfig.name}`,
+    title: `Création de site web à Abidjan | Développeur web professionnel | ${siteConfig.name}`,
     description: `${siteConfig.description} Sites qui trient vos clients et vous font gagner du temps. Devis gratuit.`,
     images: [
       {
@@ -438,7 +438,7 @@ export function generateFAQJsonLd() {
     {
       question: 'Êtes-vous une agence web à Abidjan ?',
       answer:
-        "Non, SEGNOX Studio n'est pas une agence. Je suis Fabrice Segnon, développeur web indépendant basé à Abidjan. Vous parlez directement à la personne qui fait le travail — pas à un commercial. C'est plus simple, plus rapide, et souvent moins cher qu'une agence.",
+        "Non, SEGNOX Studio n'est pas une agence. Je suis Fabrice Segnon, développeur web indépendant basé à Abidjan. Vous parlez directement à la personne qui fait le travail. Pas à un commercial. C'est plus simple, plus rapide, et souvent moins cher qu'une agence.",
     },
     {
       question: 'Pour qui créez-vous des sites web ?',

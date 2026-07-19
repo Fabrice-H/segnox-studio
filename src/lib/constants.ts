@@ -55,10 +55,10 @@ export const PROBLEMS = [
     text: "Vous ressemblez à quelqu'un qui vend sur Facebook. Pas à un pro établi.",
   },
   {
-    text: "« C'est combien ? » « Vous êtes dispo ? » — les mêmes questions, toute la journée. Pour des curieux qui n'achètent jamais.",
+    text: "« C'est combien ? » « Vous êtes dispo ? » Les mêmes questions, toute la journée. Pour des curieux qui n'achètent jamais.",
   },
   {
-    text: "Un concurrent moins bon mais plus visible récupère vos clients. Pas parce qu'il est meilleur — parce qu'on le trouve.",
+    text: "Un concurrent moins bon mais plus visible récupère vos clients. Pas parce qu'il est meilleur. Parce qu'on le trouve.",
   },
 ];
 
@@ -74,7 +74,7 @@ export const SERVICES = [
     number: "02",
     title: "Vous arrêtez de répéter",
     description:
-      "Les questions de base — prix, horaires, dispo — le système répond à votre place. Même la nuit.",
+      "Prix, horaires, disponibilité : le système répond à votre place. Même la nuit.",
     features: ["Réponses automatiques 24/7", "FAQ intelligente", "Gain de temps immédiat"],
   },
   {
@@ -249,7 +249,7 @@ export const FAQ_DATA = [
   {
     question: "Vous êtes une agence ?",
     answer:
-      "Non. Je suis un développeur indépendant, basé à Abidjan. Avant de créer SEGNOX Studio, j'ai travaillé sur des plateformes e-commerce, des applications de gestion et des projets institutionnels. Aujourd'hui, vous parlez directement à la personne qui fait le travail — pas à un commercial, pas à un intermédiaire. C'est plus simple, plus rapide, et souvent moins cher.",
+      "Non. Je suis un développeur indépendant, basé à Abidjan. Avant de créer SEGNOX Studio, j'ai travaillé sur des plateformes e-commerce, des applications de gestion et des projets institutionnels. Aujourd'hui, vous parlez directement à la personne qui fait le travail. Pas à un commercial, pas à un intermédiaire. C'est plus simple, plus rapide, et souvent moins cher.",
   },
   {
     question: "C'est pour qui ?",
@@ -274,7 +274,7 @@ export const FAQ_DATA = [
   {
     question: "Et si ça ne marche pas pour moi ?",
     answer:
-      "Je ne fais pas de miracle, et je ne promets pas de vous rendre riche. Je fais un travail solide qui vous fait gagner du temps et de la crédibilité. Le diagnostic est gratuit — vous verrez par vous-même avant de décider.",
+      "Je ne fais pas de miracle, et je ne promets pas de vous rendre riche. Je fais un travail solide qui vous fait gagner du temps et de la crédibilité. Le diagnostic est gratuit, vous verrez par vous-même avant de décider.",
   },
 ];
 
