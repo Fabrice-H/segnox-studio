@@ -2,49 +2,35 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
   return [
+    // Page d'accueil - priorité maximale
     {
       url: siteConfig.url,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
-    // Sections de la page (pour le SEO)
+
+    // Pages de services locaux - très haute priorité pour le SEO local
     {
-      url: `${siteConfig.url}/#probleme`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${siteConfig.url}/#solutions`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${siteConfig.url}/#realisations`,
-      lastModified: new Date(),
+      url: `${siteConfig.url}/creation-site-web-abidjan`,
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.95,
     },
     {
-      url: `${siteConfig.url}/#offres`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
+      url: `${siteConfig.url}/creation-site-web-cote-divoire`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
     },
     {
-      url: `${siteConfig.url}/#faq`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${siteConfig.url}/#diagnostic`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
+      url: `${siteConfig.url}/agence-web-abidjan`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
     },
   ];
 }

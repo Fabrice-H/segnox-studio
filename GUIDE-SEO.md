@@ -30,9 +30,15 @@
 
 ### Fichiers techniques
 
-- ✅ `sitemap.xml` dynamique
+- ✅ `sitemap.xml` dynamique (avec pages locales)
 - ✅ `robots.txt` optimisé
 - ✅ Favicon SVG
+- ✅ `next.config.ts` optimisé :
+  - Headers de sécurité (X-Frame-Options, X-Content-Type-Options, etc.)
+  - Compression activée
+  - Optimisation des images (AVIF, WebP)
+  - Redirections SEO pour variantes de mots-clés
+  - Cache long terme pour assets statiques
 
 ### Analytics (prêt à activer)
 
@@ -128,13 +134,20 @@ NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=ton_code
 - Envoie-leur ce lien : `https://g.page/r/[TON_ID]/review`
 - **Objectif : 5 avis minimum**
 
-#### 3.2 Créer des pages locales
+#### 3.2 Pages locales (FAIT ✅)
 
-Crée ces pages sur ton site :
+Pages créées et optimisées :
 
-- `/creation-site-web-abidjan`
-- `/developpeur-web-cote-divoire`
-- `/site-internet-pme-abidjan`
+- ✅ `/creation-site-web-abidjan` - Cible "création site web Abidjan"
+- ✅ `/creation-site-web-cote-divoire` - Cible "création site web Côte d'Ivoire"
+- ✅ `/agence-web-abidjan` - Cible "agence web Abidjan" (mot-clé très concurrentiel)
+
+Chaque page contient :
+- Métadonnées uniques optimisées pour le mot-clé
+- JSON-LD Service/ProfessionalService spécifique
+- Breadcrumbs pour la navigation
+- Contenu unique et liens internes
+- Tableau comparatif (page agence-web)
 
 #### 3.3 Backlinks locaux
 
