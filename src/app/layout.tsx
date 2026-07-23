@@ -3,6 +3,7 @@ import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { defaultMetadata } from "@/lib/seo";
 import { Analytics as GoogleAnalytics } from "@/components/analytics/google-analytics";
+import { FacebookPixel } from "@/components/analytics/facebook-pixel";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { JsonLd } from "@/components/seo/json-ld";
 
@@ -46,6 +47,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen overflow-x-hidden">
         <GoogleAnalytics />
+        <FacebookPixel />
         <VercelAnalytics />
         {children}
       </body>
